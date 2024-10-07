@@ -1,0 +1,146 @@
+#################
+### Zajecia 2 ###
+#################
+
+#################
+# Wycieczka po R studio
+# - Console
+# - Environment
+# - History
+# - Help 
+
+################
+# Interaktywna praca w konsoli 
+2 + 2
+(27 + 12 - 4) * 7
+
+################
+# Operatory arytmetyczne 
+1 + 1 # dowalanie 
+2 - 3 # odejmowanie 
+5 * 5 # mnożenie 
+10 / 2 # dzielenie 
+4^4 # potęgowanie 
+9 %% 2 # reszta z dzielenia  
+9 %% 3 # reszta z dzielenia  
+9 %/% 4 # dzielenie z zaokrągleniem do liczby całkowitej 
+
+###############
+# Zmienne
+# Zmienna to symboliczna reprezentacja przechowywanych danych, 
+# które mogą być odczytywane, modyfikowane i manipulowane w trakcie działania programu.
+# Musi zaczynać się literą. 
+
+# Przypisanie wartości do zmiennych 
+Pierwsza.zmienna <- 123
+Drua.zmienna = 456
+
+# Działania na zmiennych
+Pierwsza.zmienna * Drua.zmienna
+Wynik <- Pierwsza.zmienna * Drua.zmienna
+
+# Typy zmiennych
+liczba <- 111 # liczbowe
+tekst <- "111" # tekstowe 
+tekst.2 <- "abc"
+
+liczba * tekst # nie działa 
+
+# Zmienna logiczne 
+# Mogą przyjmować jedną z dwóch wartości: prawda (TRUE) albo fałsz (FALSE)
+TRUE
+FALSE
+
+# && - AND
+#'|| - OR
+#! - NOT
+
+# Operacje na wartościach logicznych 
+prawda <-  TRUE
+tezprawda <-  TRUE
+nieprawda <-  FALSE
+toteznie <-  FALSE
+
+prawda && nieprawda
+prawda && tezprawda
+prawda || nieprawda
+!prawda
+
+#Operatory porównania 
+Pierwsza.zmienna == Drua.zmienna # Równe 
+Pierwsza.zmienna != Drua.zmienna # Nierówne
+Pierwsza.zmienna < Drua.zmienna # Większe
+Pierwsza.zmienna > Drua.zmienna # Mniejsze
+Pierwsza.zmienna >= Drua.zmienna # Mniejsze lub równe
+Pierwsza.zmienna <= Drua.zmienna # Większe lub równe 
+
+# Funkcje 
+# 
+sum(1,2,3,4)
+sum(Pierwsza.zmienna, Drua.zmienna)
+
+# Funkcje sprawdzające
+is.numeric(Pierwsza.zmienna)
+is.character(Pierwsza.zmienna)
+
+# Funkcje zmieniające typ danych 
+tekst
+as.numeric(tekst)
+Pierwsza.zmienna
+as.character(Pierwsza.zmienna)
+
+# Wektory 
+# Wektor to jest tablica zawierająca dowolną liczbę takich samych elementów. 
+Moje.liczby <- c(10, 12, 43, 25, 87) # tworzymy przy użyciu funkcji c()
+Moje.liczby2 <- c(10, 12, "a") # automatycznie powstaje łańcuch znaków 
+rm(Moje.liczby2) # usunięcie obiektu ze środowiska
+
+# Wyświetlenie wektora 
+Moje.liczby
+
+# Wyświetlenie elementu wektora 
+Moje.liczby[2]
+
+# Operator zakresu ":"
+1:20
+
+# Wyświetlenie elementu wektora 
+Moje.liczby[2:3]
+
+#Wyświetlenie wektora z pominięciem elementów
+Moje.liczby[-1]
+Moje.liczby[-1:-3]
+
+# Funkcje zwracające informacje o wektorach 
+length(Moje.liczby) # długość wektora
+min(Moje.liczby) # Najmniejsza wartość
+max(Moje.liczby) # Największa wartość
+range(Moje.liczby) # zakres 
+
+# Działania arytmetyczne na wektorach 
+Moje.liczby + 5
+Moje.liczby + c(5,5,5,5,5) # to samo co powyżej
+
+Moje.liczby
+Moje.liczby + c(1,2)
+Moje.liczby + c(1, 2, 1, 2, 1)
+
+# Użycie wektorów w obliczeniach 
+Moje.liczby
+Moje.liczby[1] + Moje.liczby[2]
+Moje.liczby[1] <- Moje.liczby[1] * 2 # Zmiana wartości elementu wektora 
+Moje.liczby
+
+# Funkcje modyfikujące wektory 
+rev(Moje.liczby) # Wektor w odwróconej kolejności 
+sort(Moje.liczby) # sortowanie, dane od najmniejszej do największej 
+sort(Moje.liczby, decreasing = T) # odwrotnie 
+order(Moje.liczby)# pozycje elementów wektora począwszy od wartości najmniejszej do największej
+diff(Moje.liczby) # różnice między kolejnymi elementami wektora 
+
+# Funkcje statystyczne 
+sum(Moje.liczby)
+mean(Moje.liczby)
+sd(Moje.liczby)
+
+# Wektory tekstowe 
