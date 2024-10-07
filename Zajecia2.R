@@ -1,5 +1,5 @@
 #################
-### Zajecia 2 ###
+### Zajęcia 2 ###
 #################
 
 #################
@@ -92,8 +92,6 @@ as.character(Pierwsza.zmienna)
 # Wektory 
 # Wektor to jest tablica zawierająca dowolną liczbę takich samych elementów. 
 Moje.liczby <- c(10, 12, 43, 25, 87) # tworzymy przy użyciu funkcji c()
-Moje.liczby2 <- c(10, 12, "a") # automatycznie powstaje łańcuch znaków 
-rm(Moje.liczby2) # usunięcie obiektu ze środowiska
 
 # Wyświetlenie wektora 
 Moje.liczby
@@ -144,3 +142,22 @@ mean(Moje.liczby)
 sd(Moje.liczby)
 
 # Wektory tekstowe 
+Znaki.tekstowe <- c(6, "y", "h", "n", 5, "t", "g", "b")
+
+# Elementy wektora mogą mieć swoje nazwy 
+pudelka <- c(dlugosc = 20, szerokosc = 15, wysokosc = 12, liczba_szt = 3)
+pudelka
+
+objetosc <- pudelka["dlugosc"] * pudelka["szerokosc"] * pudelka["wysokosc"]
+objetosc
+
+Moje.liczby2 = c(1, 12, 23, 34, 45)
+Moje.liczby
+names(Moje.liczby2) = c("pierwsza", "druga", "trzecia", "czwarta", "piąta")
+Moje.liczby2
+names(Moje.liczby2) <- NULL
+Moje.liczby
+
+### Sprawdzenie czy dany element jest w wektorze 
+12 %in% Moje.liczby2
+c(2, 12) %in% Moje.liczby2
