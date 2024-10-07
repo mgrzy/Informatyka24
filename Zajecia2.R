@@ -161,3 +161,4 @@ Moje.liczby
 ### Sprawdzenie czy dany element jest w wektorze 
 12 %in% Moje.liczby2
 c(2, 12) %in% Moje.liczby2
+
