@@ -24,6 +24,14 @@
 9 %% 2 # reszta z dzielenia  
 9 %% 3 # reszta z dzielenia  
 9 %/% 4 # dzielenie z zaokrągleniem do liczby całkowitej 
+0.5*3
+
+# Zadanie 1
+# Aby zaliczyć zajęcia z informatyki należy uzyskać minimum 60% punktów. 
+# Maksymalnie można zdobyć 90 punktów. Ile punktów musisz uzyskać aby zaliczyć ten przedmiot? 
+# Z kolejnych bloków można uzyskać 30, 40 i 20 punktów, ile punktów trzeba by uzyskać gdyby był 
+# wymóg zaliczenia każdego bloku z osobna.
+
 
 ###############
 # Zmienne
@@ -46,6 +54,13 @@ tekst.2 <- "abc"
 
 liczba * tekst # nie działa 
 
+# Zadanie 2
+# Utwórz zmienną tekstową zawierająca Twoje imię i nazwisko, utwórz zmienne liczbowe 
+# zawierające liczbę punktów możliwych do uzyskania w kolejnych blokach oraz na całych zajęciach i 
+# wykonaj obliczenia z zadania 1 na zmiennych. Wyniki zapisz w zmiennych, 
+# których nazwy zaczynają się od “wynik-”.
+
+#####################
 # Zmienna logiczne 
 # Mogą przyjmować jedną z dwóch wartości: prawda (TRUE) albo fałsz (FALSE)
 TRUE
@@ -74,12 +89,19 @@ Pierwsza.zmienna > Drua.zmienna # Mniejsze
 Pierwsza.zmienna >= Drua.zmienna # Mniejsze lub równe
 Pierwsza.zmienna <= Drua.zmienna # Większe lub równe 
 
+# Zadanie 3
+# Używając operatorów porównania sprawdź czy suma wyliczonych punktów 
+# niezbędnych do zaliczenia każdego bloku
+# jest równa liczbie punktów niezbędnych do zaliczenia całego przedmiotu.
+
 # Funkcje 
-# 
+#Wywołanie funkcji przez podanie jej nazwy i ewentualnie w nawiasie argumentów
+sum()
 sum(1,2,3,4)
 sum(Pierwsza.zmienna, Drua.zmienna)
 
 # Funkcje sprawdzające
+typeof("10")
 is.numeric(Pierwsza.zmienna)
 is.character(Pierwsza.zmienna)
 
@@ -92,6 +114,10 @@ as.character(Pierwsza.zmienna)
 # Wektory 
 # Wektor to jest tablica zawierająca dowolną liczbę takich samych elementów. 
 Moje.liczby <- c(10, 12, 43, 25, 87) # tworzymy przy użyciu funkcji c()
+
+# Zadanie 4 
+# Utwórz wektor zawierający liczbę punktów możliwych do uzyskania podczas całego przedmiotu 
+# oraz liczby punktów do uzyskania w każdym z bloków. 
 
 # Wyświetlenie wektora 
 Moje.liczby
@@ -129,6 +155,10 @@ Moje.liczby[1] + Moje.liczby[2]
 Moje.liczby[1] <- Moje.liczby[1] * 2 # Zmiana wartości elementu wektora 
 Moje.liczby
 
+# Zadanie 5
+# Przeprowadź obliczenia z zadania 1 używając wektorów
+
+
 # Funkcje modyfikujące wektory 
 rev(Moje.liczby) # Wektor w odwróconej kolejności 
 sort(Moje.liczby) # sortowanie, dane od najmniejszej do największej 
@@ -140,6 +170,10 @@ diff(Moje.liczby) # różnice między kolejnymi elementami wektora
 sum(Moje.liczby)
 mean(Moje.liczby)
 sd(Moje.liczby)
+
+# Zadanie 6
+# Użyj funkcji sum(), mean(), sd() do wykonania obliczeń na wektorze z zadania 4
+
 
 # Wektory tekstowe 
 Znaki.tekstowe <- c(6, "y", "h", "n", 5, "t", "g", "b")
@@ -157,6 +191,10 @@ names(Moje.liczby2) = c("pierwsza", "druga", "trzecia", "czwarta", "piąta")
 Moje.liczby2
 names(Moje.liczby2) <- NULL
 Moje.liczby
+
+# Zadanie 7
+# Dodaj etykiety do wektora z zadania 4 używając funkcji names()
+
 
 ### Sprawdzenie czy dany element jest w wektorze 
 12 %in% Moje.liczby2
