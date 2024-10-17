@@ -179,3 +179,19 @@ dane[dane$szerokosc>2, ]
 
 getwd() # 
 #setwd()
+
+
+########################################
+# Macierz
+# Dwuwymiarowy odpowiednik wektora - zachowuje się podobnie do wektora i podobnie się wykonuje obliczenia
+# Tworząc podajemy wektor elementów i liczbę wierszy, w których dane mają być zorganizowane.
+
+m1 <- matrix(1:6, nrow = 3)
+m1
+
+# Tablice
+# Tablica jest wielowymiarowym wektorem, wymiarów może być więcej niż 2
+a1 <- array(1:12, dim=c(2, 3, 2))
+a1
+
+#
