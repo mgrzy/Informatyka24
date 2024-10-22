@@ -175,6 +175,20 @@ order(dane$szerokość)
 dane$szerokosc>2
 dane[dane$szerokosc>2, ]
 
+#Ramki danych - dodawanie i usuwanie elementów
+df1 <- data.frame("col1" = c(1:5), "col2" = c("A", "B", "C", "D", "E"), "col3" = c(1.1, 2.2, 3.3, 4.4, 5.5))
+
+# Dodawanie wiersza
+df1[nrow(df1)+1,] <- list(6, "F", 6.6)
+df1
+str(df1)
+df1[nrow(df1)+1,] <- c(7, "G", 7.7)
+df1
+str(df1)
+
+df1 <- df1[-c(6,7),]
+df1
+
 # Wczytywanie danych do R
 
 getwd() # 
